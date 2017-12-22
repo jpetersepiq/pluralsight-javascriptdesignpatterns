@@ -1,0 +1,8 @@
+var obj = {};
+var nextObj = Object.create(Object.prototype);
+
+
+var obj={};
+obj['param'] = 'new value';
+obj[val] = 'new Value';
+console.log(obj)
