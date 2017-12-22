@@ -7,10 +7,18 @@ function myFunc() {
 }
 var Calc = function (start) {
     this.add = function (x) {
+      var that = this;
+      start=start+x;
+      return that;
     };
     this.multiply = function (x) {
+      var that = this;
+      start=start*x;
+      return that;
     };
     this.equals = function (callback) {
+      callback(start);
+      return this;
     };
 };
 new Calc(0)
